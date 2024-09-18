@@ -11,18 +11,23 @@ hmtl {
     font-family: 'Quicksand', sans-serif;
 }
 main {
-    padding: 0rem 4rem;
+    padding: 6rem 4rem 0rem 4rem;
 }
 
 /* NAVİGASYON KISMI İÇİN */
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    height: 8rem;
-    background-color: rgb(166, 166, 166, 0.5);
+    height: 6rem;
+    background-color: #d2d2d2;
+    z-index: 1000;
 }
 #webname {
     height: 2rem;
@@ -40,9 +45,10 @@ ul {
     list-style-type: none;
 }
 li {
-    padding: 1rem 1rem;  
+    padding: 1rem 1rem;
+    margin: 0rem 0.5rem;
     border-radius: 1.5rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 li:hover  {
     background-color:rgba(90, 90, 90, 0.5);
@@ -52,7 +58,7 @@ li:hover a {
 }
 
 li a {
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 li a,
 li a:visited {
@@ -190,5 +196,5 @@ li a:visited {
     padding-bottom: 1rem;
     padding-top: 1rem;
     text-align: center;
-    background-color:rgb(166, 166, 166, 0.5);
+    background-color:#d2d2d2;
 }
